@@ -2262,6 +2262,11 @@ input:checked + .toggle-bg {
     padding-right: 2rem;
   }
 
+  .md\:px-20 {
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+
   .md\:pb-12 {
     padding-bottom: 3rem;
   }
@@ -2415,6 +2420,11 @@ input:checked + .toggle-bg {
   .xl\:px-12 {
     padding-left: 3rem;
     padding-right: 3rem;
+  }
+
+  .xl\:px-44 {
+    padding-left: 11rem;
+    padding-right: 11rem;
   }
 
   .xl\:pb-4 {
