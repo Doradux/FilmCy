@@ -10,6 +10,7 @@ module.exports = {
       },
       backgroundImage: {
         'hero': "linear-gradient(to bottom, rgba(0,0,0,0.8), rgba(0,0,0,0.6)), url('../../src/assets/hero.png')",
+        'tv': "linear-gradient(to bottom, rgba(0,0,0,0.8), rgba(0,0,0,0.6)), url('../../src/assets/livetv.jpg')",
       }
     },
   },
