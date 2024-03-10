@@ -10,21 +10,24 @@
 
 <body>
 
-    <header class="pt-4 bg-hero bg-center bg-no-repeat bg-cover">
+    <header class="pt-4 md:pt-8 md:px-8 bg-hero bg-center bg-no-repeat bg-cover">
+
         <div class="header__top flex justify-between px-4">
             <a href="#"><img class="h-7" src="./assets/logo.png" alt="logo"></a>
             <button href="#"
                 class="bg-main-color hover:bg-main-hover text-white py-1 px-5 rounded-md transition ease-in-out duration-200"
                 type="button">Sign in</button>
         </div>
+
         <div class="header__bot px-4 mt-80 pb-80">
-            <h1 class="text-xl text-center text-white font-semibold">The LARGEST catalog ever seen</h1>
-            <h2 class="font-thin text-center text-white">Whenever you want, wherever you want</h2>
-            <div class="flex flex-col gap-2 mt-6">
-                <input type="email" class="border text-sm rounded-md p-2.5 bg-black border-gray-500 bg-opacity-60"
+            <h1 class="text-xl text-center text-white font-semibold md:text-4xl">The LARGEST catalog ever seen</h1>
+            <h2 class="font-thin text-center text-white md:text-2xl">Whenever you want, wherever you want</h2>
+            <div class="flex flex-col gap-2 mt-6 md:items-center md:mt-20">
+                <input type="email"
+                    class="border text-sm rounded-md p-2.5 bg-black border-gray-500 bg-opacity-60 md:w-1/2"
                     placeholder="Email adress">
                 <button href="#"
-                    class="bg-main-color hover:bg-main-hover text-white py-2.5 rounded-md transition ease-in-out duration-200"
+                    class="bg-main-color hover:bg-main-hover text-white py-2.5 rounded-md transition ease-in-out duration-200 md:w-1/2"
                     type="button">
                     <p class="hover:animate-pulse">Start now</p>
                 </button>
@@ -59,7 +62,7 @@
         </div>
 
         <div>
-            <div class="custom-shape-divider-top-1710026451 bg-main-color">
+            <div class="custom-shape-divider-top-1710026451 bg-white">
                 <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
                     preserveAspectRatio="none">
                     <path
@@ -75,21 +78,24 @@
             </div>
 
 
-            <div class="advantages px-4 pt-12 pb-12 bg-main-color">
+            <div class="advantages px-4 md:px-8 pt-12 pb-12 bg-white md:flex md:gap-3 text-white">
 
-                <div class="bg- shadow-lg shadow-zinc-800 p-4 rounded-md mb-4 bg-white flex flex-col items-center">
+                <div
+                    class="shadow-lg shadow-zinc-800 p-4 rounded-md mb-4 bg-black flex flex-col items-center md:h-40 md:w-1/3">
                     <h1 class="text-xl text-center font-semibold">Watch anywhere</h1>
                     <p class="font-thin text-center">Enjoy from the web or in the app on your phone, tablet, or Smart
                         TVs</p>
                 </div>
 
-                <div class="bg- shadow-lg shadow-zinc-800 p-4 rounded-md mb-4 bg-white flex flex-col items-center">
+                <div
+                    class="bg- shadow-lg shadow-zinc-800 p-4 rounded-md mb-4 bg-black flex flex-col items-center md:h-40 md:w-1/3">
                     <h1 class="text-xl text-center font-semibold">X-Ray for more</h1>
                     <p class="font-thin text-center">Use X-Ray for Movies and TV to identify actors and songs, explore
                         actor bios, view trivia, and more</p>
                 </div>
 
-                <div class="bg- shadow-lg shadow-zinc-800 p-4 rounded-md bg-white flex flex-col items-center">
+                <div
+                    class="bg- shadow-lg shadow-zinc-800 p-4 rounded-md bg-black flex flex-col items-center md:h-40 md:w-1/3">
                     <h1 class="text-xl text-center font-semibold">Data saver</h1>
                     <p class="font-thin text-center">Control data usage while downloading and watching videos on phones
                         or tablets</p>
@@ -97,57 +103,59 @@
             </div>
 
 
-            <div class="tv text-white bg-main-color">
-                <div class="text pb-12 px-4 pt-12 bg-tv bg-center bg-no-repeat bg-cover">
-                    <h1 class="text-xl text-center font-semibold">TV Content</h1>
-                    <p class="font-thin text-center">With FilmCy you can also see all the available TV channels with
-                        super high resolution</p>
-                    <div class="channels grid grid-cols-2 mt-4 px-4 gap-2">
-                        <figure class="flex justify-center items-center bg-white border-2 border-black rounded-sm">
-                            <img src="./assets/tv_channels/bbcnews.png" alt="bbc news">
+            <div class="tv text-white bg-white">
+                <div class="text pb-12 px-4 pt-12 bg-tv bg-center bg-no-repeat bg-cover flex flex-col md:items-center md:justify-start">
+                    <div class="mb-12">
+                        <h1 class="text-xl text-center font-semibold md:text-4xl">TV Content</h1>
+                        <p class="font-thin text-center md:text-2xl md:px-14">With FilmCy you can also see all the available TV channels with
+                            super high resolution</p>
+                    </div>
+                    <div class="channels grid grid-cols-2 mt-4 px-4 gap-2 md:grid-cols-5 md:pb-12">
+                        <figure class="flex justify-center items-center bg-white border-2 border-black rounded-sm w-auto md:w-28 md:h-28">
+                            <img class="w-full object-contain" src="./assets/tv_channels/bbcnews.png" alt="bbc news">
                         </figure class="bg-white border-2 border-black rounded-sm">
 
-                        <figure class="bg-white border-2 border-black rounded-sm">
-                            <img src="./assets/tv_channels/espn.png" alt="ESPN">
+                        <figure class="bg-white border-2 border-black rounded-sm w-auto md:w-28 md:h-28">
+                            <img class="w-full object-contain" src="./assets/tv_channels/espn.png" alt="ESPN">
                         </figure>
 
-                        <figure class="bg-white border-2 border-black rounded-sm">
-                            <img src="./assets/tv_channels/hbo.jpg" alt="hbo">
+                        <figure class="bg-white border-2 border-black rounded-sm w-auto md:w-28 md:h-28">
+                            <img class="w-full object-contain" src="./assets/tv_channels/hbo.jpg" alt="hbo">
                         </figure>
 
-                        <figure class="bg-white border-2 border-black rounded-sm">
-                            <img src="./assets/tv_channels/cwtelevision.png" alt="cw television network">
+                        <figure class="bg-white border-2 border-black rounded-sm w-auto md:w-28 md:h-28">
+                            <img class="w-full object-contain" src="./assets/tv_channels/cwtelevision.png" alt="cw television network">
                         </figure>
 
-                        <figure class="bg-white border-2 border-black rounded-sm">
-                            <img src="./assets/tv_channels/channelv.png" alt="channel v">
+                        <figure class="bg-white border-2 border-black rounded-sm w-auto md:w-28 md:h-28">
+                            <img class="w-full object-contain" src="./assets/tv_channels/channelv.png" alt="channel v">
                         </figure>
 
-                        <figure class="bg-white border-2 border-black rounded-sm">
-                            <img src="./assets/tv_channels/starworld.webp" alt="star world">
+                        <figure class="bg-white border-2 border-black rounded-sm w-auto md:w-28 md:h-28">
+                            <img class="w-full object-contain" src="./assets/tv_channels/starworld.webp" alt="star world">
                         </figure>
 
-                        <figure class="bg-white border-2 border-black rounded-sm">
-                            <img src="./assets/tv_channels/bbcfood.jpg" alt="bbc food">
+                        <figure class="bg-white border-2 border-black rounded-sm w-auto md:w-28 md:h-28">
+                            <img class="w-full object-contain" src="./assets/tv_channels/bbcfood.jpg" alt="bbc food">
                         </figure>
 
-                        <figure class="bg-white border-2 border-black rounded-sm">
-                            <img src="./assets/tv_channels/axn.jpg" alt="axn">
+                        <figure class="bg-white border-2 border-black rounded-sm w-auto md:w-28 md:h-28">
+                            <img class="w-full object-contain" src="./assets/tv_channels/axn.jpg" alt="axn">
                         </figure>
 
-                        <figure class="bg-white border-2 border-black rounded-sm">
-                            <img src="./assets/tv_channels/disney.png" alt="disney channel">
+                        <figure class="bg-white border-2 border-black rounded-sm w-auto md:w-28 md:h-28">
+                            <img class="w-full object-contain" src="./assets/tv_channels/disney.png" alt="disney channel">
                         </figure>
 
-                        <figure class="bg-white border-2 border-black rounded-sm">
-                            <img src="./assets/tv_channels/cnetwork.png" alt="cartoon network">
+                        <figure class="bg-white border-2 border-black rounded-sm w-auto md:w-28 md:h-28">
+                            <img class="w-full object-contain" src="./assets/tv_channels/cnetwork.png" alt="cartoon network">
                         </figure>
                     </div>
                 </div>
             </div>
         </div>
 
-        <div class="custom-shape-divider-bottom-1710018499 bg-main-color pb-12">
+        <div class="custom-shape-divider-bottom-1710018499 bg-white pb-12">
             <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
                 preserveAspectRatio="none">
                 <path
@@ -166,7 +174,7 @@
 
     <footer class="flex flex-col justify-around items-center gap-2 bg-black py-8">
         <a href="#"><img class="h-7 mb-6" src="./assets/logo.png" alt="logo"></a>
-        <div class="links flex flex-col gap-3 text-sky-600 items-center mb-6">
+        <div class="links flex flex-col gap-3 text-sky-600 items-center mb-6 md:flex-row">
             <a href="#">Terms and Privacy Notice</a>
             <a href="#">Cookie Notice</a>
             <a href="#">Send us feedback</a>
