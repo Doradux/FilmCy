@@ -11,19 +11,20 @@
 
 <body>
 
-    <body class="bg-black">
+    <body class="bg-black max-w-screen">
 
-        <header class="pt-4 md:pt-8 md:px-8 xl:pt-14 xl:px-14">
+        <header class="pt-4 md:pt-8 md:px-8 xl:pt-12 xl:px-14 mb-10">
 
-            <div class="header__top flex justify-between px-4">
+            <div class="header__top flex justify-around items-center px-4 md:justify-between">
                 <a href="#"><img class="h-7" src="./assets/index/logo.png" alt="logo"></a>
 
 
                 <button id="dropdownAvatarNameButton" data-dropdown-toggle="dropdownAvatarName"
-                    class="flex items-center text-sm pe-1 p-1 pr-2 bg-main-color font-medium text-gray-900 rounded-full text-white md:me-0 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:text-white"
+                    class="btnprofile flex items-center text-sm bg-main-color hover:bg-main-hover border-2 border-main-hover font-medium rounded-full text-white md:me-0 xl:mt-0"
                     type="button">
-                    <img class="w-8 h-8 me-2 rounded-full" src="./assets/hall/fran.jpg" alt="user photo">
-                    Fran Matias
+                    <p class="hidden md:px-4 md:pb-2 text-2xl">Fran Matias</p>
+                    <img class="w-10 h-10 md:h-14 md:w-14 xl:h-20 xl:w-20 rounded-full profileimg" src="./assets/hall/fran.jpg"
+                        alt="user photo">
                     <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                         d="m1 1 4 4 4-4" />
                     </svg>
@@ -31,9 +32,9 @@
 
                 <!-- Dropdown menu -->
                 <div id="dropdownAvatarName"
-                    class="z-10 hidden bg-main-color divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600">
+                    class="z-50 hidden bg-main-color divide-y divide-black rounded-lg shadow w-44">
                     <div class="px-4 py-3 text-sm text-white">
-                        <div class="font-medium">User</div>
+                        <div class="font-bold">User</div>
                         <div class="truncate">fjmatias@iesruizgijon.com</div>
                     </div>
                     <ul class="py-2 text-sm text-gray-700 dark:text-gray-200"
@@ -60,7 +61,389 @@
 
         </header>
 
+
+
+        <main>
+
+            <hero class="my-10">
+
+
+
+
+                <div id="indicators-carousel" class="relative w-full px-4" data-carousel="static">
+                    <!-- Carousel wrapper -->
+                    <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
+                        <!-- Item 1 -->
+                        <div class="hidden duration-700 ease-in-out" data-carousel-item="active">
+                            <div
+                                class="absolute h-full w-full z-50 left-14 md:left-28 xl:left-40 flex flex-col justify-center gap-10 pt-0">
+                                <figure class="w-32 md:w-44 xl:w-72">
+                                    <img class="w-full object-contain" src="./assets/iconmoviesseries/barbie.png"
+                                        alt="barbie">
+                                </figure>
+                                <div class="rep text-white hidden md:flex">
+                                    <figure class="w-20">
+                                        <a href="#"><img class="w-full object-contain"
+                                                src="./assets/moviesseries/play.png" alt="play"></a>
+                                    </figure>
+                                    <div class="dur flex flex-col justify-center ml-2">
+                                        <p class="text-xl">Play</p>
+                                        <p>Movie</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="absolute inset-0 bg-grad z-40"></div>
+                            <img src="./assets/moviesseries/barbie.webp"
+                                class="rounded-xl absolute block h-36 w-96 md:h-auto md:w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                                alt="...">
+                        </div>
+
+                        <!-- Item 2 -->
+                        <div class="hidden duration-700 ease-in-out" data-carousel-item="active">
+                            <div
+                                class="absolute h-full w-full z-50 left-14 md:left-28 xl:left-40 flex flex-col justify-center gap-10 pt-0">
+                                <figure class="w-32 md:w-44 xl:w-72">
+                                    <img class="w-full object-contain" src="./assets/iconmoviesseries/pombo.png"
+                                        alt="pombo">
+                                </figure>
+                                <div class="rep text-white hidden md:flex">
+                                    <figure class="w-20">
+                                        <a href="#"><img class="w-full object-contain"
+                                                src="./assets/moviesseries/play.png" alt="play"></a>
+                                    </figure>
+                                    <div class="dur flex flex-col justify-center ml-2">
+                                        <p class="text-xl">Play</p>
+                                        <p>Serie</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="absolute inset-0 bg-grad z-40"></div>
+                            <img src="./assets/moviesseries/pombo.webp"
+                                class="rounded-xl absolute block h-36 w-96 md:h-auto md:w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                                alt="...">
+                        </div>
+
+                        <!-- Item 3 -->
+                        <div class="hidden duration-700 ease-in-out" data-carousel-item="active">
+                            <div
+                                class="absolute h-full w-full z-50 left-14 md:left-28 xl:left-40 flex flex-col justify-center gap-10 pt-0">
+                                <figure class="w-32 md:w-44 xl:w-72">
+                                    <img class="w-full object-contain" src="./assets/iconmoviesseries/galaxia.png"
+                                        alt="galaxia">
+                                </figure>
+                                <div class="rep text-white hidden md:flex">
+                                    <figure class="w-20">
+                                        <a href="#"><img class="w-full object-contain"
+                                                src="./assets/moviesseries/play.png" alt="play"></a>
+                                    </figure>
+                                    <div class="dur flex flex-col justify-center ml-2">
+                                        <p class="text-xl">Play</p>
+                                        <p>Serie</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="absolute inset-0 bg-grad z-40"></div>
+                            <img src="./assets/moviesseries/galaxia.webp"
+                                class="rounded-xl absolute block h-36 w-96 md:h-auto md:w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                                alt="...">
+                        </div>
+
+                        <!-- Item 4 -->
+                        <div class="hidden duration-700 ease-in-out" data-carousel-item="active">
+                            <div
+                                class="absolute h-full w-full z-50 left-14 md:left-28 xl:left-40 flex flex-col justify-center gap-10 pt-0">
+                                <figure class="w-32 md:w-44 xl:w-72">
+                                    <img class="w-full object-contain" src="./assets/iconmoviesseries/ricky.png"
+                                        alt="ricky">
+                                </figure>
+                                <div class="rep text-white hidden md:flex">
+                                    <figure class="w-20">
+                                        <a href="#"><img class="w-full object-contain"
+                                                src="./assets/moviesseries/play.png" alt="play"></a>
+                                    </figure>
+                                    <div class="dur flex flex-col justify-center ml-2">
+                                        <p class="text-xl">Play</p>
+                                        <p>Movie</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="absolute inset-0 bg-grad z-40"></div>
+                            <img src="./assets/moviesseries/ricky.webp"
+                                class="rounded-xl absolute block h-36 w-96 md:h-auto md:w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                                alt="...">
+                        </div>
+
+                        <!-- Item 5 -->
+                        <div class="hidden duration-700 ease-in-out" data-carousel-item="active">
+                            <div
+                                class="absolute h-full w-full z-50 left-14 md:left-28 xl:left-40 flex flex-col justify-center gap-10 pt-0">
+                                <figure class="w-32 md:w-44 xl:w-72">
+                                    <img class="w-full object-contain" src="./assets/iconmoviesseries/lope.png"
+                                        alt="lope">
+                                </figure>
+                                <div class="rep text-white hidden md:flex items-center">
+                                    <figure class="w-10 xl:w-20">
+                                        <a href="#"><img class="w-full object-contain"
+                                                src="./assets/moviesseries/play.png" alt="play"></a>
+                                    </figure>
+                                    <div class="dur flex flex-col justify-center ml-2">
+                                        <p class="text-xl">Play</p>
+                                        <p>Documental</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="absolute inset-0 bg-grad z-40"></div>
+                            <img src="./assets/moviesseries/lope.webp"
+                                class="rounded-xl absolute block h-36 w-96 md:h-auto md:w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                                alt="...">
+                        </div>
+
+
+                    </div>
+                    <!-- Slider indicators -->
+                    <div class="absolute z-30 flex -translate-x-1/2 space-x-3 rtl:space-x-reverse bottom-5 left-1/2">
+                        <button type="button" class="w-3 h-3 rounded-full" aria-current="true" aria-label="Slide 1"
+                            data-carousel-slide-to="0"></button>
+                        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2"
+                            data-carousel-slide-to="1"></button>
+                        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3"
+                            data-carousel-slide-to="2"></button>
+                        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 4"
+                            data-carousel-slide-to="3"></button>
+                        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 5"
+                            data-carousel-slide-to="4"></button>
+                    </div>
+                    <!-- Slider controls -->
+                    <button type="button"
+                        class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+                        data-carousel-prev>
+                        <span
+                            class="inline-flex items-center justify-center w-5 h-5 md:w-10 md:h-10   rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                            <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true"
+                                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" d="M5 1 1 5l4 4" />
+                            </svg>
+                            <span class="sr-only">Previous</span>
+                        </span>
+                    </button>
+                    <button type="button"
+                        class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+                        data-carousel-next>
+                        <span
+                            class="inline-flex items-center justify-center w-5 h-5 md:w-10 md:h-10  rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                            <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true"
+                                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" d="m1 9 4-4-4-4" />
+                            </svg>
+                            <span class="sr-only">Next</span>
+                        </span>
+                    </button>
+                </div>
+
+                </button>
+                </div>
+
+            </hero>
+
+
+            <p class="font-bold text-xl text-white text-center mt-8">News</p>
+            <div class="contenido text-white flex flex-col overflow-hidden ">
+
+
+                <!-- exclusivos -->
+                <div class="exclusivos relative pt-3 px-10 flex gap-4 max-w-screen overflow-hidden">
+
+                    <div class="previous absolute top-1/2 left-4">
+                        <button class="rounded-full p-2 text-white font-extrabold">
+                            < </button>
+                    </div>
+                    <div class="next absolute top-1/2 right-4">
+                        <button class="rounded-full p-2 text-white font-extrabold">></button>
+                    </div>
+
+                    <a href="">
+                        <figure class="w-48 overflow-hidden rounded-xl">
+                            <img class="h-full w-full object-contain"
+                                src="./assets/moviesseries/exclusives/reina_roja.jpg" alt="rroja">
+                        </figure>
+                    </a>
+
+                    <a href="">
+                        <figure class="w-48 overflow-hidden rounded-xl">
+                            <img src="./assets/moviesseries/exclusives/beau.png" alt="beau">
+                        </figure>
+                    </a>
+
+                    <a href="">
+                        <figure class="w-48 rounded-xl">
+                            <img class="rounded-xl z-50" src="./assets/moviesseries/exclusives/lope.jpg" alt="lope">
+                        </figure>
+
+                    </a>
+                    <div class="-ml-14 bg-movieselected bg-center bg-no-repeat bg-cover h-72 rounded-xl -z-50 p-4 pl-16 flex flex-col justify-end"
+                        style="min-width: 420px;">
+                        <figure class="mb-4">
+                            <img class="drop-shadow-xl shadow-black w-3/4 " src="./assets/iconmoviesseries/lope.png"
+                                alt="lopeicon">
+                        </figure>
+                        <div class="flex items-center mb-3">
+                            <a href=""><img class="w-12 mr-2" src="./assets/moviesseries/play.png" alt="play"></a>
+                            <p class="mr-4">Play</p>
+                            <img class="w-8 rounded-full border-2 border-white mr-1" src="./assets/add.png" alt="add">
+                            <img class="w-8 rounded-full border-2 border-white" src="./assets/info.png" alt="info">
+                        </div>
+                        <p class="bg-gray w-fit py-1 px-2 rounded-xl text-sm ml-2">+16</p>
+                    </div>
+
+
+                    <a href="">
+                        <figure class="w-48 overflow-hidden rounded-xl">
+                            <img src="./assets/moviesseries/exclusives/american.jpg" alt="american">
+                        </figure>
+                    </a>
+
+                    <a href="">
+                        <figure class="w-48 overflow-hidden rounded-xl">
+                            <img src="./assets/moviesseries/exclusives/segun.jpg" alt="segun">
+                        </figure>
+                    </a>
+
+                    <a href="">
+                        <figure class="w-48 overflow-hidden rounded-xl">
+                            <img src="./assets/moviesseries/exclusives/sand.jpg" alt="sand">
+                        </figure>
+                    </a>
+
+                    <a href="">
+                        <figure class="w-48 overflow-hidden rounded-xl">
+                            <img src="./assets/moviesseries/exclusives/fleabag.png" alt="fleabag">
+                        </figure>
+                    </a>
+                </div>
+            </div>
+
+
+
+            <p class="font-bold text-xl text-white text-center pt-12">Explore</p>
+            <div class="continue relative pt-3 px-10 flex gap-4 max-w-screen overflow-hidden mb-12">
+                <div class="previous absolute top-1/2 left-4">
+                    <button class="rounded-full p-2 text-white font-extrabold">
+                        < </button>
+                </div>
+                <div class="next absolute top-1/2 right-4">
+                    <button class="rounded-full p-2 text-white font-extrabold">></button>
+                </div>
+
+                <a href="">
+                    <figure class="w-80 overflow-hidden rounded-xl">
+                        <img src="./assets/moviesseries/categories/comedy.webp" alt="comedy">
+                    </figure>
+                </a>
+
+                <a href="">
+                    <figure class="w-80 overflow-hidden rounded-xl">
+                        <img src="./assets/moviesseries/categories/drama.webp" alt="drama">
+                    </figure>
+                </a>
+
+                <a href="">
+                    <figure class="w-80 overflow-hidden rounded-xl">
+                        <img src="./assets/moviesseries/categories/romance.webp" alt="romance">
+                    </figure>
+                </a>
+
+                <a href="">
+                    <figure class="w-80 overflow-hidden rounded-xl">
+                        <img src="./assets/moviesseries/categories/documental.webp" alt="documental">
+                    </figure>
+                </a>
+
+                <a href="">
+                    <figure class="w-80 overflow-hidden rounded-xl">
+                        <img src="./assets/moviesseries/categories/anime.webp" alt="anime">
+                    </figure>
+                </a>
+
+                <a href="">
+                    <figure class="w-80 overflow-hidden rounded-xl">
+                        <img src="./assets/moviesseries/categories/fic.webp" alt="fic">
+                    </figure>
+                </a>
+
+                
+            </div>
+
+
+
+
+
+
+
+            <p class="font-bold text-xl text-white text-center pt-8">Continue watching</p>
+            <div class="continue relative pt-3 px-10 flex gap-4 max-w-screen overflow-hidden mb-12">
+                <div class="previous absolute top-1/2 left-4">
+                    <button class="rounded-full p-2 text-white font-extrabold">
+                        < </button>
+                </div>
+                <div class="next absolute top-1/2 right-4">
+                    <button class="rounded-full p-2 text-white font-extrabold">></button>
+                </div>
+
+                <a href="">
+                    <figure class="w-64 overflow-hidden rounded-xl">
+                        <img src="./assets/moviesseries/resume/anqv.webp" alt="aqui">
+                    </figure>
+                </a>
+
+                <a href="">
+                    <figure class="w-64 overflow-hidden rounded-xl">
+                        <img src="./assets/moviesseries/resume/reyes.webp" alt="reyes">
+                    </figure>
+                </a>
+
+                <a href="">
+                    <figure class="w-64 overflow-hidden rounded-xl">
+                        <img src="./assets/moviesseries/resume/marta.webp" alt="marta">
+                    </figure>
+                </a>
+
+                <a href="">
+                    <figure class="w-64 overflow-hidden rounded-xl">
+                        <img src="./assets/moviesseries/resume/terminator.webp" alt="terminator">
+                    </figure>
+                </a>
+
+                <a href="">
+                    <figure class="w-64 overflow-hidden rounded-xl">
+                        <img src="./assets/moviesseries/resume/manolito.webp" alt="manolito">
+                    </figure>
+                </a>
+
+                <a href="">
+                    <figure class="w-64 overflow-hidden rounded-xl">
+                        <img src="./assets/moviesseries/resume/sombras.webp" alt="sombras">
+                    </figure>
+                </a>
+
+                <a href="">
+                    <figure class="w-64 overflow-hidden rounded-xl">
+                        <img src="./assets/moviesseries/resume/games.webp" alt="games">
+                    </figure>
+                </a>
+
+
+
+
+            </div>
+
+
+
+        </main>
+
     </body>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
 
 </html>
+<!-- <script src="./carousel.js"></script> -->
