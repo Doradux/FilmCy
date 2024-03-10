@@ -1,11 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="./../build/css/style.css">
+    <link rel="icon" type="image/x-icon" href="./assets/index/logo-s.png">
+    <title>Register</title>
 </head>
-<body>
-    
+
+<body class="bg-register bg-center bg-no-repeat bg-cover h-screen">
+
+    <header class="pt-4 md:pt-8 md:px-8 xl:pt-14 xl:px-14">
+
+        <div class="header__top flex justify-between px-4">
+            <a href="#"><img class="h-7" src="./assets/index/logo.png" alt="logo"></a>
+            <button href="#"
+                class="bg-main-color hover:bg-main-hover text-white py-1 px-5 rounded-md transition ease-in-out duration-200"
+                type="button">Sign in</button>
+        </div>
+
+    </header>
+
+    <main>
+        <div class="header__bot px-4 pt-60 xl:pt-48 h-full">
+            <h1 class="text-xl text-center text-white font-semibold md:text-4xl xl:text-6xl mb-4">Be part of the <span
+                    class="text-main-color">BIGGEST</span> streaming service in the world</h1>
+            <h2 class="font-thin text-center text-white md:text-2xl xl:text-4xl">And start watching <span
+                    class="text-main-color">NOW</span></h2>
+            <form action="hall.html" class="flex flex-col gap-2 mt-6 md:items-center md:mt-20 xl:mt-20">
+                <input required type="text"
+                    class="border text-sm rounded-md p-2.5 bg-black border-gray-500 bg-opacity-60 md:w-1/2 xl:w-1/4 text-white"
+                    placeholder="Full name">
+                <input required type="text"
+                    class="border text-sm rounded-md p-2.5 bg-black border-gray-500 bg-opacity-60 md:w-1/2 xl:w-1/4 text-white"
+                    placeholder="Phone number">
+                <input required type="password"
+                    class="border text-sm rounded-md p-2.5 bg-black border-gray-500 bg-opacity-60 md:w-1/2 xl:w-1/4 text-white"
+                    placeholder="Password">
+                <button type="submit"
+                    class="bg-main-color hover:bg-main-hover text-white py-2.5 rounded-md transition ease-in-out duration-200 md:w-1/2 xl:w-1/4"
+                    type="button">
+                    <p class="hover:animate-pulse">Start now</p>
+                </button>
+            </form>
+        </div>
+    </main>
+
 </body>
+
+
+
+<style>
+    span {
+        text-shadow: 1px 0 6px red;
+    }
+</style>
+
 </html>

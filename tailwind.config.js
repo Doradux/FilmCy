@@ -9,8 +9,10 @@ module.exports = {
         "gray": "#414247",
       },
       backgroundImage: {
-        'hero': "linear-gradient(to bottom, rgba(0,0,0,0.8), rgba(0,0,0,0.6)), url('../../src/assets/hero.png')",
-        'tv': "linear-gradient(to bottom, rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url('../../src/assets/tv.webp')",
+        'hero': "linear-gradient(to bottom, rgba(0,0,0,0.8), rgba(0,0,0,0.6)), url('../../src/assets/index/hero.png')",
+        'registermobile': "linear-gradient(to bottom, rgba(0,0,0,0.8), rgba(0,0,0,0.6)), url('../../src/assets/register/bg.webp')",
+        'register': "linear-gradient(to bottom, rgba(0,0,0,0.8), rgba(0,0,0,0.6)), url('../../src/assets/register/bg.png')",
+        'tv': "linear-gradient(to bottom, rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url('../../src/assets/index/tv.webp')",
       }
     },
   },
